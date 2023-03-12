@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".forgotActivity">
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="Forgot Password"
+        android:textColor="@color/white"
+        android:textSize="45sp" />
+
+
+    <EditText
+        android:id="@+id/Password"
+        style="@style/EditTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotPassword"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/thickness"
+        android:backgroundTint="#D9D9D9"
+        android:hint="New Password"
+        android:textSize="25sp"
+
+        />
+
+    <EditText
+        android:id="@+id/CPassword"
+        style="@style/EditTextHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/thickness"
+        android:backgroundTint="#D9D9D9"
+        android:hint="Confirm Password"
+        android:textSize="25sp"
+
+        />
+
+    <Button
+        android:id="@+id/buttonLog2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Password"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/mybutton"
+        android:text="login"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLog2"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="I didn't forget my password"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/logintext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#12D6E2"
+            android:text="Login"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/forgotPassword"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-95dp"
+        app:srcCompat="@drawable/helpap"
+        />
+
+
+</RelativeLayout>

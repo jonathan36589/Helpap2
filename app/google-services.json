@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "176777051206",
+    "firebase_url": "https://helpap-f46dd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "helpap-f46dd",
+    "storage_bucket": "helpap-f46dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176777051206:android:a9e8c2b410e60ac9e9de47",
+        "android_client_info": {
+          "package_name": "com.example.helpap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176777051206-8skc3lf6t8r6pd305ba6khjerbkqipqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8aKEObUCT1-f9Zjvp7_S_Q_8Qou7b3so"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176777051206-8skc3lf6t8r6pd305ba6khjerbkqipqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
