@@ -76,7 +76,7 @@
             android:layout_marginLeft="20dp"
             android:background="@drawable/mybutton"
             android:padding="15sp"
-            android:text="Sign In"
+            android:text="Register"
             android:textColor="@color/white"
             android:textSize="30sp" />
     </LinearLayout>
