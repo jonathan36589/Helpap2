@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     Button buttonLog3;
     TextView loginTxt2;
     private FirebaseAuth mAuth;
+    EditText email,passwrd,username;
 
 
 
@@ -32,6 +34,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         mAuth = FirebaseAuth.getInstance();
 
 
@@ -46,6 +49,18 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         Log.d(TAG, "onCreate: 14");
 
 
+        email = findViewById(R.id.email);
+        email.setOnClickListener(this);
+        String tempEmail = email.toString().trim();
+
+        passwrd = findViewById(R.id.Password);
+        passwrd.setOnClickListener(this);
+        String tempPassword = passwrd.toString().trim();
+
+
+       username = findViewById(R.id.Username);
+       username.setOnClickListener(this);
+       String tempUsername = username.toString().trim();
 
 
     }
@@ -62,9 +77,18 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.loginTxt2:
                 intent = new Intent(this,LoginActivity.class);
                 startActivity(intent);
+
+
+// intent = new Intent(this,LoginActivity.class);
+// startActivity(intent);
+                break;
         }
 
     }
+
+
+
+
 
     private void createAccount(String email, String password) {
         // [START create_user_with_email]
